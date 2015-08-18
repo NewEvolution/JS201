@@ -1,25 +1,29 @@
 {{#each this}}
-<section class="family-member" key="{{@key}}">
-  <div class="row">
-    <div class="col-xs-12">
-      <h3 class="member-name">{{name}}</h3>
+  <section class="family-member" key="{{@key}}">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="member-name">{{name}}</h2>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <h4>Vital Statistics</h4>
-      <ul>
-        <li>Age: {{age}}</li>
-        <li>Gender: {{gender}}</li>
-      </ul>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Vital Statistics</h4>
+        <ul>
+          <li>Age: {{age}}</li>
+          <li>Gender: {{gender}}</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h4>Skills</h4>
+        <ul class="skills">
+          {{#each skills}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <button class="delete btn btn-danger">Delete!</button>
+      </div>
     </div>
-    <div class="col-sm-9">
-      <h4>Skills</h4>
-      <ul>
-        {{#each skills}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-    </div>
-  </div>
+  </section>
 {{/each}}

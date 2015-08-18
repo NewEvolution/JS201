@@ -7,7 +7,6 @@ define(["jquery", "lodash", "firebase"],
         famObject.age = $("#age").val();
         famObject.gender = $("#gender > option:selected").val();
         famObject.skills = $("#skills").val().split(", ");
-        console.log(famObject);
         firebaseRef.child("family").push(famObject, function() {
           $('#add-form').each(function() {
             this.reset();

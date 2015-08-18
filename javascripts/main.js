@@ -29,4 +29,8 @@ requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "q", "add-fam", "
     e.preventDefault();
     addFam.add(firebaseRef);
   });
+  $("#content").on("click", ".delete", function(e) {
+    e.preventDefault();
+    delFam.del(firebaseRef, $(this));
+  });
 });
