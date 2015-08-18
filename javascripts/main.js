@@ -18,6 +18,6 @@ requirejs.config({
 });
 
 // The main function requiring all our anciliary scripts
-requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "q"], 
-  function($, _, _firebase, Handlebars, bootstrap, Q){
+requirejs(["jquery", "lodash", "firebase", "hbs", "bootstrap", "q", "add-fam", "del-fam"], 
+  function($, _, _firebase, Handlebars, bootstrap, Q, addFam, delFam){
 });

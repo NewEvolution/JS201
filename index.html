@@ -8,6 +8,31 @@
     <title>Nashville Software School</title>
   </head>
   <body>
+    <div class="container-flow">
+      <div class="row">
+        <div class="col-sm-3">
+          <form>
+            <div class="input-group">
+              <span class="input-group-addon" id="input-addon-1">&nbsp;&nbsp;&nbsp;Name:</span>
+              <input type="text" class="form-control" placeholder="First Last" aria-describedby="input-addon-1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="input-addon-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age:</span>
+              <input type="number" class="form-control" aria-describedby="input-addon-2">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="input-addon-3">Gender:</span>
+              <select class="form-control" aria-describedby="input-addon-3">
+                <option value="male">Male</option>
+                <option valu="female">Female</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-9" id="content">
+        </div>
+      </div>
+    </div>
     <script data-main="./javascripts/main" src="bower_components/requirejs/require.js"></script>
   </body>
 </html>
