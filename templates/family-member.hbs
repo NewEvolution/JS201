@@ -1,0 +1,25 @@
+{{#each this}}
+<section class="family-member" key="{{@key}}">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3 class="member-name">{{name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>Vital Statistics</h4>
+      <ul>
+        <li>Age: {{age}}</li>
+        <li>Gender: {{gender}}</li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+      <h4>Skills</h4>
+      <ul>
+        {{#each skills}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+{{/each}}
