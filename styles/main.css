@@ -5,7 +5,9 @@
 .family-member {
   text-align: center;
   padding-bottom: 20px;
-  background-color: #efefef; }
+  background-color: #efefef;
+  margin: 10px 0;
+  border-radius: 10px; }
   .family-member:nth-of-type(even) {
     background-color: #ddd; }
 
