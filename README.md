@@ -1,4 +1,4 @@
-#JS201
+#Quiz: JS-201
 
 1. Create a Github repo named JS201.
 1. Clone it into your workspace directory and `cd` into the directory it creates.
